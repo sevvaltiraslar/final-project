@@ -15,6 +15,10 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     private var shoppingListViewModel: ShoppingListViewModel!
+    var selectedCategory = ""
+    var selectedTitle = ""
+    var selectedDescription = ""
+    var selectedPrice = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,10 +43,10 @@ class DetailViewController: UIViewController {
     }
     
     func setLabel() {
-        categoryLabel.text = "Category: "
-        titleLabel.text = "Title: "
-        descriptionLabel.text = "Description: "
-        priceLabel.text = "Price: "
+        categoryLabel.text = "Category: \(selectedCategory)"
+        titleLabel.text = "Title: \(selectedTitle)"
+        descriptionLabel.text = "Description: \(selectedDescription)"
+        priceLabel.text = "Price: \(selectedPrice)"
     }
 }
 

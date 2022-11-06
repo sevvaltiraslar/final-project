@@ -13,6 +13,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var pageTitleLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     private var shoppingListViewModel: ShoppingListViewModel!
+    var chosenCategory = ""
+    var chosenTitle = ""
+    var chosenDescription = ""
+    var chosenPrice = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +26,16 @@ class HomeViewController: UIViewController {
         getData()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailViewController"{
+            let destinationVC = segue.destination as! DetailViewController
+            destinationVC.selectedCategory = chosenCategory
+            destinationVC.selectedTitle = chosenTitle
+            destinationVC.selectedDescription = chosenDescription
+            destinationVC.selectedPrice = chosenPrice
+        }
+        
+    }
     // MARK: Functions
     func getData() {
         let url = URL(string: "https://fakestoreapi.com/products")!
@@ -51,6 +65,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let shoppingViewModel = self.shoppingListViewModel.shoppingAtIndex(indexPath.row)
+        chosenCategory = shoppingViewModel.category
+        chosenTitle = shoppingViewModel.title
+        chosenDescription = shoppingViewModel.description
+        chosenPrice = String(shoppingViewModel.price)
         performSegue(withIdentifier: "toDetailViewController", sender: nil)
     }
 }
