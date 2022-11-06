@@ -10,9 +10,10 @@ import Firebase
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var pageTitleLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        pageTitleLabel.text = "PROFILE"
     }
     // MARK: Buttons actions
     @IBAction func logoutClicked(_ sender: Any) {

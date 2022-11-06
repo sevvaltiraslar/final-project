@@ -12,9 +12,10 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
+    @IBOutlet weak var pageTitleLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        pageTitleLabel.text = "AUTH"
     }
     
     // MARK: Button actions

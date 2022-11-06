@@ -10,11 +10,13 @@ import Alamofire
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var pageTitleLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     private var shoppingListViewModel: ShoppingListViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        pageTitleLabel.text = "HOME"
         tableView.delegate = self
         tableView.dataSource = self
         getData()
