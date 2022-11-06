@@ -10,3 +10,4 @@ It is an e-commerce application. With the help of Firebase, you can register and
 <img width="352" alt="Ekran Resmi 2022-11-06 22 19 48" src="https://user-images.githubusercontent.com/58611650/200190537-2023a128-0ee7-46d3-b174-bfb03c01158c.png">
 <img width="342" alt="Ekran Resmi 2022-11-06 22 20 10" src="https://user-images.githubusercontent.com/58611650/200190539-a43bb306-b479-46a4-b482-39be1abf8bad.png">
 <img width="352" alt="Ekran Resmi 2022-11-06 22 19 56" src="https://user-images.githubusercontent.com/58611650/200190541-ae574c9c-dafa-4c82-9c39-0fa6b7af3d9b.png">
+<img width="354" alt="Ekran Resmi 2022-11-06 22 20 03" src="https://user-images.githubusercontent.com/58611650/200190599-a2ec4cba-af00-4958-97c5-47e086993be2.png">
