@@ -159,27 +159,51 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYv-ZA-Xvo">
+                                <rect key="frame" x="50" y="334" width="314" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="zb1-50-8wy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="xlF-sb-FiE">
+                                <rect key="frame" x="137" y="134.5" width="140" height="139"/>
+                                <color key="tintColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="eHC-Fp-66t"/>
+                                    <constraint firstAttribute="width" constant="140" id="oza-MO-U7L"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bvg-jX-uRz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Bvg-jX-uRz" firstAttribute="trailing" secondItem="yYv-ZA-Xvo" secondAttribute="trailing" constant="50" id="66s-UO-3tm"/>
                             <constraint firstItem="Bvg-jX-uRz" firstAttribute="trailing" secondItem="Wqo-7n-Vhw" secondAttribute="trailing" id="6ld-ei-5EB"/>
                             <constraint firstItem="Wqo-7n-Vhw" firstAttribute="top" secondItem="Bvg-jX-uRz" secondAttribute="top" id="7Xm-rB-yvp"/>
                             <constraint firstItem="4dh-G4-hRE" firstAttribute="leading" secondItem="Bvg-jX-uRz" secondAttribute="leading" constant="157" id="B35-x6-F9K"/>
+                            <constraint firstItem="Bvg-jX-uRz" firstAttribute="trailing" secondItem="xlF-sb-FiE" secondAttribute="trailing" constant="137" id="Ex9-Ot-rP0"/>
+                            <constraint firstItem="yYv-ZA-Xvo" firstAttribute="leading" secondItem="Bvg-jX-uRz" secondAttribute="leading" constant="50" id="MdE-gR-AxK"/>
+                            <constraint firstItem="yYv-ZA-Xvo" firstAttribute="top" secondItem="xlF-sb-FiE" secondAttribute="bottom" constant="60" id="N4W-Rg-5jm"/>
                             <constraint firstItem="Bvg-jX-uRz" firstAttribute="trailing" secondItem="4dh-G4-hRE" secondAttribute="trailing" constant="157" id="W97-2J-4pm"/>
+                            <constraint firstItem="xlF-sb-FiE" firstAttribute="leading" secondItem="Bvg-jX-uRz" secondAttribute="leading" constant="137" id="h6V-De-5eG"/>
+                            <constraint firstItem="xlF-sb-FiE" firstAttribute="top" secondItem="Wqo-7n-Vhw" secondAttribute="bottom" constant="50" id="o4E-vO-wvw"/>
                             <constraint firstItem="Bvg-jX-uRz" firstAttribute="bottom" secondItem="4dh-G4-hRE" secondAttribute="bottom" constant="200" id="smB-eD-Opr"/>
                             <constraint firstItem="Wqo-7n-Vhw" firstAttribute="leading" secondItem="Bvg-jX-uRz" secondAttribute="leading" id="xMq-e3-Ldr"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="SgH-Ts-I0W"/>
                     <connections>
+                        <outlet property="nameLabel" destination="yYv-ZA-Xvo" id="xdc-nf-Q8l"/>
                         <outlet property="pageTitleLabel" destination="Wqo-7n-Vhw" id="KSa-LK-xMw"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="toViewController" modalPresentationStyle="fullScreen" id="a9M-sq-lJa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="icG-04-gEM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1820" y="1221"/>
+            <point key="canvasLocation" x="1818.840579710145" y="1220.7589285714284"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="nN9-HC-BK5">
@@ -385,8 +409,12 @@
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
