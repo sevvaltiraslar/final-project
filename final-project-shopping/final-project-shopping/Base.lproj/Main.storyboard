@@ -156,17 +156,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5O-MU-WRV">
-                                                    <rect key="frame" x="40" y="21" width="334" height="69"/>
+                                                    <rect key="frame" x="40" y="31" width="334" height="49"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Q5O-MU-WRV" secondAttribute="bottom" constant="10" id="02k-ch-feF"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Q5O-MU-WRV" secondAttribute="trailing" constant="20" id="DW2-qT-5sp"/>
-                                                <constraint firstItem="Q5O-MU-WRV" firstAttribute="leading" secondItem="czy-Um-rG2" secondAttribute="leadingMargin" constant="20" id="LYy-Ur-pN4"/>
-                                                <constraint firstItem="Q5O-MU-WRV" firstAttribute="top" secondItem="czy-Um-rG2" secondAttribute="topMargin" constant="10" id="fgP-qu-K15"/>
+                                                <constraint firstItem="Q5O-MU-WRV" firstAttribute="leading" secondItem="czy-Um-rG2" secondAttribute="leadingMargin" constant="20" id="8No-9J-qIj"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Q5O-MU-WRV" secondAttribute="bottom" constant="20" id="QkU-zv-buh"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Q5O-MU-WRV" secondAttribute="trailing" constant="20" id="Wdt-p0-Bjs"/>
+                                                <constraint firstItem="Q5O-MU-WRV" firstAttribute="top" secondItem="czy-Um-rG2" secondAttribute="topMargin" constant="20" id="aT2-J8-odt"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -307,6 +307,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="nxg-kP-L4P"/>
         <segue reference="2MG-Cb-XsV"/>
     </inferredMetricsTieBreakers>
     <resources>
