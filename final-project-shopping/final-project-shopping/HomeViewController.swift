@@ -47,4 +47,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.titleLabel.text = shoppingViewModel.title
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toDetailViewController", sender: nil)
+    }
 }

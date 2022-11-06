@@ -12,4 +12,5 @@ struct ShoppingModel: Decodable {
     let title: String
     let price: Double
     let description: String
+    let category: String
 }

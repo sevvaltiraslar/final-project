@@ -23,7 +23,23 @@ struct ShoppingListViewModel {
 struct ShoppingViewModel {
     let shopping: ShoppingModel
     
+    var id: Int {
+        return self.shopping.id
+    }
+    
     var title: String {
         return self.shopping.title
+    }
+    
+    var price: Double {
+        return self.shopping.price
+    }
+    
+    var description: String {
+        return self.shopping.description
+    }
+    
+    var category: String {
+        return self.shopping.category
     }
 }
