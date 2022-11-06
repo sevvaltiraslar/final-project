@@ -113,18 +113,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="gzl-T5-LQC">
+                                <rect key="frame" x="0.0" y="89" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CQZ-uV-afT"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bFf-8e-rRj">
+                                <rect key="frame" x="0.0" y="139" width="414" height="674"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2CZ-a9-a7n"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gzl-T5-LQC" secondAttribute="trailing" id="1QF-U5-gLj"/>
                             <constraint firstItem="2CZ-a9-a7n" firstAttribute="trailing" secondItem="xnU-da-Tyb" secondAttribute="trailing" id="3EP-EX-ff6"/>
+                            <constraint firstItem="bFf-8e-rRj" firstAttribute="leading" secondItem="2CZ-a9-a7n" secondAttribute="leading" id="5xD-L9-NfK"/>
+                            <constraint firstItem="2CZ-a9-a7n" firstAttribute="trailing" secondItem="bFf-8e-rRj" secondAttribute="trailing" id="Snf-5y-fjw"/>
+                            <constraint firstItem="2CZ-a9-a7n" firstAttribute="bottom" secondItem="bFf-8e-rRj" secondAttribute="bottom" id="ZEO-N4-l6e"/>
+                            <constraint firstItem="gzl-T5-LQC" firstAttribute="leading" secondItem="2CZ-a9-a7n" secondAttribute="leading" id="cp9-CV-rAD"/>
                             <constraint firstItem="xnU-da-Tyb" firstAttribute="top" secondItem="2CZ-a9-a7n" secondAttribute="top" id="onT-xF-AsC"/>
                             <constraint firstItem="xnU-da-Tyb" firstAttribute="leading" secondItem="2CZ-a9-a7n" secondAttribute="leading" id="sVw-a6-rjt"/>
+                            <constraint firstItem="gzl-T5-LQC" firstAttribute="top" secondItem="xnU-da-Tyb" secondAttribute="bottom" constant="5" id="yiT-aC-2yF"/>
+                            <constraint firstItem="bFf-8e-rRj" firstAttribute="top" secondItem="gzl-T5-LQC" secondAttribute="bottom" id="zfn-DI-pIv"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="UhL-nz-R0P"/>
                     <connections>
                         <outlet property="pageTitleLabel" destination="xnU-da-Tyb" id="c5b-oZ-3UH"/>
+                        <outlet property="searchBar" destination="gzl-T5-LQC" id="Sjj-ou-AMb"/>
+                        <outlet property="tableView" destination="bFf-8e-rRj" id="DeP-KO-K3v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KLx-47-vtL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -226,7 +246,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5O-MU-WRV">
                                                     <rect key="frame" x="40" y="31" width="334" height="49"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -402,6 +422,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="6el-8L-oIj"/>
         <segue reference="2MG-Cb-XsV"/>
     </inferredMetricsTieBreakers>
     <resources>
