@@ -8,16 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		3914883406BD615A8F4D5DEC /* Pods_final_project_shopping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCB36A0B60F99CBF069F4B3 /* Pods_final_project_shopping.framework */; };
+		5A27C6F22917D1C200D5ED3C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27C6F12917D1C200D5ED3C /* HomeTableViewCell.swift */; };
+		5A27C6F62917D3E500D5ED3C /* ShoppingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27C6F52917D3E500D5ED3C /* ShoppingModel.swift */; };
+		5A27C6F82917D43400D5ED3C /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27C6F72917D43400D5ED3C /* Webservice.swift */; };
+		5A27C6FA2917D51C00D5ED3C /* ShoppingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27C6F92917D51C00D5ED3C /* ShoppingViewModel.swift */; };
 		5A3450AD2917C1E700F2D1EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3450AC2917C1E700F2D1EE /* AppDelegate.swift */; };
 		5A3450AF2917C1E700F2D1EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3450AE2917C1E700F2D1EE /* SceneDelegate.swift */; };
 		5A3450B12917C1E700F2D1EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3450B02917C1E700F2D1EE /* ViewController.swift */; };
 		5A3450B42917C1E700F2D1EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3450B22917C1E700F2D1EE /* Main.storyboard */; };
 		5A3450B62917C1E900F2D1EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A3450B52917C1E900F2D1EE /* Assets.xcassets */; };
 		5A3450B92917C1E900F2D1EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A3450B72917C1E900F2D1EE /* LaunchScreen.storyboard */; };
+		5A70AA082917C8AE008C2F71 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A70AA072917C8AE008C2F71 /* HomeViewController.swift */; };
+		5A70AA0A2917C8BA008C2F71 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A70AA092917C8BA008C2F71 /* SearchViewController.swift */; };
+		5A70AA0C2917C8C4008C2F71 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A70AA0B2917C8C4008C2F71 /* ProfileViewController.swift */; };
+		5A70AA0E2917C8CD008C2F71 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A70AA0D2917C8CD008C2F71 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4CCB36A0B60F99CBF069F4B3 /* Pods_final_project_shopping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_final_project_shopping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A27C6F12917D1C200D5ED3C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		5A27C6F52917D3E500D5ED3C /* ShoppingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingModel.swift; sourceTree = "<group>"; };
+		5A27C6F72917D43400D5ED3C /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		5A27C6F92917D51C00D5ED3C /* ShoppingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewModel.swift; sourceTree = "<group>"; };
 		5A3450A92917C1E700F2D1EE /* final-project-shopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "final-project-shopping.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A3450AC2917C1E700F2D1EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A3450AE2917C1E700F2D1EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +38,10 @@
 		5A3450B52917C1E900F2D1EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A3450B82917C1E900F2D1EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A3450BA2917C1E900F2D1EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A70AA072917C8AE008C2F71 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5A70AA092917C8BA008C2F71 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		5A70AA0B2917C8C4008C2F71 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5A70AA0D2917C8CD008C2F71 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DD3AFF5EB8CC7F8D46A86ACA /* Pods-final-project-shopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-final-project-shopping.debug.xcconfig"; path = "Target Support Files/Pods-final-project-shopping/Pods-final-project-shopping.debug.xcconfig"; sourceTree = "<group>"; };
 		F37BC1622194ABCC83F8CC7D /* Pods-final-project-shopping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-final-project-shopping.release.xcconfig"; path = "Target Support Files/Pods-final-project-shopping/Pods-final-project-shopping.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,6 +61,7 @@
 		5A3450A02917C1E700F2D1EE = {
 			isa = PBXGroup;
 			children = (
+				5A27C6F92917D51C00D5ED3C /* ShoppingViewModel.swift */,
 				5A3450AB2917C1E700F2D1EE /* final-project-shopping */,
 				5A3450AA2917C1E700F2D1EE /* Products */,
 				88004F18E7E13D627E300CF7 /* Pods */,
@@ -66,10 +83,17 @@
 				5A3450AC2917C1E700F2D1EE /* AppDelegate.swift */,
 				5A3450AE2917C1E700F2D1EE /* SceneDelegate.swift */,
 				5A3450B02917C1E700F2D1EE /* ViewController.swift */,
+				5A70AA072917C8AE008C2F71 /* HomeViewController.swift */,
+				5A70AA092917C8BA008C2F71 /* SearchViewController.swift */,
+				5A70AA0B2917C8C4008C2F71 /* ProfileViewController.swift */,
 				5A3450B22917C1E700F2D1EE /* Main.storyboard */,
 				5A3450B52917C1E900F2D1EE /* Assets.xcassets */,
 				5A3450B72917C1E900F2D1EE /* LaunchScreen.storyboard */,
 				5A3450BA2917C1E900F2D1EE /* Info.plist */,
+				5A70AA0D2917C8CD008C2F71 /* GoogleService-Info.plist */,
+				5A27C6F12917D1C200D5ED3C /* HomeTableViewCell.swift */,
+				5A27C6F52917D3E500D5ED3C /* ShoppingModel.swift */,
+				5A27C6F72917D43400D5ED3C /* Webservice.swift */,
 			);
 			path = "final-project-shopping";
 			sourceTree = "<group>";
@@ -80,7 +104,6 @@
 				DD3AFF5EB8CC7F8D46A86ACA /* Pods-final-project-shopping.debug.xcconfig */,
 				F37BC1622194ABCC83F8CC7D /* Pods-final-project-shopping.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A3450B92917C1E900F2D1EE /* LaunchScreen.storyboard in Resources */,
+				5A70AA0E2917C8CD008C2F71 /* GoogleService-Info.plist in Resources */,
 				5A3450B62917C1E900F2D1EE /* Assets.xcassets in Resources */,
 				5A3450B42917C1E700F2D1EE /* Main.storyboard in Resources */,
 			);
@@ -207,9 +231,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A70AA0C2917C8C4008C2F71 /* ProfileViewController.swift in Sources */,
+				5A70AA0A2917C8BA008C2F71 /* SearchViewController.swift in Sources */,
+				5A27C6FA2917D51C00D5ED3C /* ShoppingViewModel.swift in Sources */,
+				5A27C6F22917D1C200D5ED3C /* HomeTableViewCell.swift in Sources */,
 				5A3450B12917C1E700F2D1EE /* ViewController.swift in Sources */,
 				5A3450AD2917C1E700F2D1EE /* AppDelegate.swift in Sources */,
 				5A3450AF2917C1E700F2D1EE /* SceneDelegate.swift in Sources */,
+				5A70AA082917C8AE008C2F71 /* HomeViewController.swift in Sources */,
+				5A27C6F62917D3E500D5ED3C /* ShoppingModel.swift in Sources */,
+				5A27C6F82917D43400D5ED3C /* Webservice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
